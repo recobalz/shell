@@ -1,0 +1,7 @@
+查看nginx的access日志
+
+访问IP地址排序
+```
+# cut -c1-15 /var/log/nginx/access.log |sort |uniq -c |sort -n -t' ' -rk 1
+
+```
