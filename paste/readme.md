@@ -12,8 +12,8 @@ paste单词意思是粘贴。该命令主要用来将多个文件的内容合并
 
     -s 将每个文件合并成行而不是按行粘贴。
     
-    ```
-    [zookeeper@master rh]$ cat pas1
+```
+[zookeeper@master rh]$ cat pas1
 ID123
 ID345
 ID456
@@ -41,7 +41,7 @@ ID789:world
 [zookeeper@master rh]$ paste -s pas1 pas2　　　　--要合并两行，而不是按行粘贴，可以使用-s选项。
 ID123    ID345    ID456    ID789
 come    back    hello    world
-    ```
+```
     
 paste命令还有一个很有用的选项（-）。意即对每一个（-），从标准输入中读一次数据。使用空格作域分隔符，以一个6列格式显示目录列表。方法如下：
 
