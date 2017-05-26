@@ -1,0 +1,12 @@
+Edit /var/spool/cron/crontabs/root
+Add the line (all on one line)
+5 0 * * * /full/path/to/script arguments/with/full/path > /full/path/to/logfile 2>&1
+Run the command "cat /var/run/crond.pid"
+That will print the process number of the running crond, such as 12345
+Run the command "kill 12345"
+where "12345" should be replaced with the number output by the previous command
+
+
+
+1. add crontab
+2. kill `cat /var/run/crond.pid` && crond
